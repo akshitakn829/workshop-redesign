@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react";  //using react packages
 import './App.css';
 
 
@@ -9,7 +9,7 @@ export default function Dashboard() {
  const [showChart, setShowChart] = useState(false);
 const [startDate, setStartDate] = useState("");
 const [endDate, setEndDate] = useState("");
- const workshops = [
+ const workshops = [                                // workshop cards
   {
     title: "Web Development",
     desc: "Build responsive web apps",
@@ -36,13 +36,13 @@ const [endDate, setEndDate] = useState("");
   }
 ];
 
-const domainCounts = workshops.reduce((acc, w) => {
+const domainCounts = workshops.reduce((acc, w) => {            
   acc[w.domain] = (acc[w.domain] || 0) + 1;
   return acc;
 }, {});
 
 
-const clearFilters = () => {
+const clearFilters = () => {                       //clear all filters set to default
   setSearch("");
   setDomainFilter("All");
   setDurationFilter("All");
@@ -53,7 +53,7 @@ setEndDate("");
 };
 
 
-
+//filters 
 const [domainFilter, setDomainFilter] = useState("All");
 const [durationFilter, setDurationFilter] = useState("All");
  const [stateFilter, setStateFilter] = useState("All");
@@ -88,7 +88,7 @@ const filteredWorkshops = workshops
       matchesDate
     );
   })
-  .sort((a, b) => {
+  .sort((a, b) => {                         //sorting workshops by durations
     if (sortOrder === "none") return 0;
 
     const order = { Short: 1, Medium: 2, Long: 3 };
@@ -100,11 +100,11 @@ const filteredWorkshops = workshops
   });
   return (
    <>
-<div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+<div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>   //hamburger menu
   ☰
 </div>
 
-<div className={`sidebar ${menuOpen ? "open" : ""}`}>
+<div className={`sidebar ${menuOpen ? "open" : ""}`}>         //sidebar
 
   <h3>Menu</h3>
 
@@ -118,7 +118,7 @@ const filteredWorkshops = workshops
     <div className="container">
       
 
-      <header className="header">
+      <header className="header">                        //title
         <h1>FOSSEE Workshop Booking Portal</h1>
         <p>Discover and register for technical workshops with ease</p>
       </header>
@@ -127,14 +127,13 @@ const filteredWorkshops = workshops
 
       
 
-      
-      <section className="section">
+      <section className="section">                         // all workshops section
         <h2>All Workshops</h2>
 
 
 
 {/* CHART SECTION */}
-{showChart && (
+{showChart && (                                        // charts of workshops
   <section className="section">
     <h2>📊 Workshops by Domain</h2>
 
@@ -207,7 +206,7 @@ const filteredWorkshops = workshops
   />
 </div>
 
-<div className="filter-item">
+<div className="filter-item">                  // filter by dates
   <label>End Date</label>
   <input
     type="date"
@@ -216,7 +215,7 @@ const filteredWorkshops = workshops
   />
 </div>
 
-  <select onChange={(e) => setSortOrder(e.target.value)}>
+  <select onChange={(e) => setSortOrder(e.target.value)}>  //sorting by duration
     <option value="none">No Sorting</option>
     <option value="asc">Duration ↑</option>
     <option value="desc">Duration ↓</option>
@@ -240,7 +239,7 @@ const filteredWorkshops = workshops
 
 
 
-      <div className="grid">
+      <div className="grid">                   // workshop card elements
   {filteredWorkshops.length > 0 ? (
     filteredWorkshops.map((w, index) => (
       <div className="card" key={index}>
@@ -291,7 +290,7 @@ const filteredWorkshops = workshops
   <p>We provide curated technical workshops for students to learn practical skills.</p>
 </section>
 
-          <section id="faq" className="section">
+          <section id="faq" className="section">   //faqs
         <h2>FAQ</h2>
         <p><b>Who can join?</b> Anyone interested in learning.</p>
         <p><b>Is it free?</b> Depends on the workshop.</p>
@@ -301,12 +300,12 @@ const filteredWorkshops = workshops
       
       
       
-      <section id="contact" className="section">
+      <section id="contact" className="section">    // contact us
   <h2>Contact Us</h2>
   <p>Email: support@workshopportal.com</p>
 </section>
 
-<section id="feedback" className="section">
+<section id="feedback" className="section">        // feedback
   <h2>Feedback</h2>
   <p>We’d love your thoughts on improving the platform.</p>
 </section>
