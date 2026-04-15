@@ -29,24 +29,6 @@ npm start
 
 ---
 
-## Features
-
--Login page with authentication UI (frontend only)
--Workshop listing with dynamic cards
--Search workshops by title
--Filters:
-  -Domain (Web, Data, Security)
-  -Duration (Short, Medium, Long)
-  -State-wise filtering
-  -Date range filtering (Start & End date)
--Sorting by duration (ascending/descending)
--Interactive chart showing workshops by domain
--Clear filters functionality
--Responsive and clean UI design
--Animated gradient background and modern card layout
-
-----
-
 ## 📁 Improvements & Features
 
 ## Improvements:
@@ -72,7 +54,7 @@ npm start
 - Interactive charts
 - Clear filters option
 - Responsive UI design
-
+- Animated gradient background and modern card layout
 
 
 ### OLD UI VS NEW UI:
