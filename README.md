@@ -98,6 +98,13 @@ Improvements:  Cleaner UI, login pages created for easy access
 ### After
 ![alt text](screenshots/dbnew.png)
 
+Improvements:  
+- Added filtering and sorting features
+- Improved mobile responsiveness
+- Calendar-based date input
+- Hamburger menu for navigation
+- Interactive charts for insights
+
 ------------------------------------------------------------------------------
 
 
@@ -109,10 +116,22 @@ Improvements:  Cleaner UI, login pages created for easy access
 
 ### After
 
+filter by domain:
 ![alt text](screenshots/domainfilternew.png)
+
+filter by state:
 ![alt text](screenshots/statefilternew.png)
+
+filter by course duration:
 ![alt text](screenshots/lengthfilternew.png)
+
+sort by course duration:
 ![alt text](screenshots/sortdurnew.png)
+
+
+Improvements:  
+- Added filtering and sorting features
+- domain,length based filtration
 
 ------------------------------------------------------------------------------
 
@@ -126,6 +145,15 @@ Improvements:  Cleaner UI, login pages created for easy access
 
 ![alt text](screenshots/filterednew.png)
 
+when no results are found:
+![alt text](screenshots/nowsfoundnew.png)
+
+
+Improvements:  
+- Clean filtered workshop cards - clear, clean UI with date,name,description
+  of course mentioned clearly
+
+
 ------------------------------------------------------------------------------
 
 ## Charts
@@ -138,6 +166,9 @@ Improvements:  Cleaner UI, login pages created for easy access
 
 ![alt text](screenshots/chartnew.png)
 
+
+Improvements: 
+- Interactive charts which are easier to read for insights
 ------------------------------------------------------------------------------
 
 
@@ -154,8 +185,15 @@ Improvements:  Cleaner UI, login pages created for easy access
 ## New feature added : domain based filter
 ![alt text](screenshots/domainfilternew.png)
 
+
+## New feature added : course duration based filter
+filter by course duration:
+![alt text](screenshots/lengthfilternew.png)
+
+
 # New feature added :  featured workshops
 ![alt text](screenshots/featuredwsnew.png)
+
 
 # New feature added :  About us, FAQs and Contact us sections
 ![alt text](screenshots/sectionsnew.png)
